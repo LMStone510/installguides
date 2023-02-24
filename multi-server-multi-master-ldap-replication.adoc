@@ -44,7 +44,7 @@ you enable the multi- master replication feature, you do not need to
 run the command again.
 
 
-When `zmlocalconfig` is run the first time, the master LDAP servers
+When `zmldapenable-mmr` is run the first time, the master LDAP servers
 are configured as follows:
 
 * The first master LDAP server ID is set to `1`.
@@ -68,6 +68,7 @@ zmlocalconfig -e ldap_master_url="ldap://<<master-1.example.com>>:389 ldap://<<m
 ----
 +
 
+Note that once MMR is enabled on an LDAP server, that LDAP server will also support LDAP hosts configured as traditional LDAP Replica servers.
 
 == Installing a Secondary Master LDAP Server
 
